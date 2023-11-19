@@ -28,4 +28,5 @@ tsc -w
 
 ```javascript
 basictype.ts; //基本类型
+AnyUnknown.ts; // any 和 unknown 
 ```
