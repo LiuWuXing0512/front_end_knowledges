@@ -74,3 +74,17 @@ aaa = bbb
 let b: unknown = 10;
 
 
+// TIPS
+// Object 可以是任何类型 相当于第二个any
+let Obj: Object = 1;
+let Obj1: Object = "1";
+let Obj2: Object = ["1"];
+let Obj3: Object = {};
+let Obj4: Object = () => 1;
+// object 只能是引用类型
+
+
+// {} 字面量类型 也是支持所有类型
+// 字面量类型 只能赋值给字面量类型 不能对这个变量做任何操作
+let literal: {} = {a: 1};
+// literal.b = '1'
