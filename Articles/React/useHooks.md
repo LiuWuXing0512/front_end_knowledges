@@ -120,7 +120,7 @@ const App = () => {
 
 1. 相同点：
     - `useCallback` 和 `useMemo` 都有依赖这个参数
-    - `useCallback` 和 `useMemo` 都有返回项目
+    - `useCallback` 和 `useMemo` 都有返回项
 2. 不同点：
     - `useCallback` 返回的是一个函数，当依赖的值改变的时候，才会重新计算，`useMemo` 返回的是一个值，当依赖的值改变的时候，才会重新计算
 
