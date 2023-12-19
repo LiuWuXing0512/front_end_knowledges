@@ -6,7 +6,7 @@ let someValue: any = "this is a string";
 let strLength: number = (<string>someValue).length;
 ```
 
-#在我们类型断言的时候要注意只会欺骗TypeScript，不会修改真正的JS类型，所以断言需谨慎#
+**在我们类型断言的时候要注意只会欺骗TypeScript，不会修改真正的JS类型，所以断言需谨慎**
 
 ```ts
 function fn(num: number | string) {
