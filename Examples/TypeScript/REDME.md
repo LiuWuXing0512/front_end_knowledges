@@ -29,6 +29,7 @@ tsc -w
 ```javascript
 basictype.ts; //基本类型
 AnyUnknown.ts; // any 和 unknown 
-interface.ts // 接口
-arr.ts // 数组类型
+interface.ts; // 接口
+arr.ts; // 数组类型
+fn.ts; //函数
 ```

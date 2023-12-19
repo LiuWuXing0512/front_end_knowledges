@@ -4,4 +4,5 @@
 - [any 和 unknown](/Articles/TypeScript/AnyUnknown.md)
 - [interface or type](/Articles/TypeScript/interface.md)
 - [arr](/Articles/TypeScript/arr.md)
+- [fn](/Articles/TypeScript/fn.md)
 
