@@ -6,4 +6,5 @@
 - [arr](/Articles/TypeScript/arr.md)
 - [fn](/Articles/TypeScript/fn.md)
 - [类型断言or联合类型or交叉类型](/Articles/TypeScript/asJointCross.md)
+- [内置对象](/Articles/TypeScript/builtinObject.md)
 

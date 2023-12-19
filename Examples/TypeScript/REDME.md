@@ -33,4 +33,5 @@ interface.ts; // 接口
 arr.ts; // 数组类型
 fn.ts; //函数
 asJointCross.ts; // 类型断言  联合类型 交叉类型
+builtinObject.ts; // 内置对象
 ```
