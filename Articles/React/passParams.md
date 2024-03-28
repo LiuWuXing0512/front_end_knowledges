@@ -206,3 +206,55 @@ const GrandSonComponent = () => {
     );
 };
 ```
+
+
+#### 发布订阅
+```js
+class PubSub {
+    constructor() {
+        this.events = {};
+    }
+
+    on(eventName, callback) {
+        if (!this.events[eventName]) {
+            this.events[eventName] = [];
+        }
+        this.events[eventName].push(callback);
+    }
+
+    emit(eventName, ...args) {
+        if (this.events[eventName]) {
+            this.events[eventName].forEach((callback) => {
+                callback(...args);
+            });
+        }
+    }
+
+    off(eventName, callback) {
+        if (this.events[eventName]) {
+            const index = this.events[eventName].findIndex((item) => item === callback);
+            if (index !== -1) {
+                this.events[eventName].splice(index, 1);
+            }
+        }
+    }
+}
+
+const pubsub = new PubSub();
+
+pubsub.on('eventName', (...args) => {
+    console.log(args);
+});
+
+pubsub.on('eventName', (...args) => {
+    console.log(args);
+});
+
+pubsub.emit('eventName', 'arg1', 'arg2');
+
+pubsub.off('eventName', (...args) => {
+    console.log(args);
+});
+
+pubsub.emit('eventName', 'arg1', 'arg2');
+```
